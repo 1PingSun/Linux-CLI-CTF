@@ -10,6 +10,8 @@ FROM --platform=linux/amd64 ubuntu:22.04
 # 設定環境變數，避免在安裝過程中出現互動提示
 ENV DEBIAN_FRONTEND=noninteractive
 
+RUN echo "* hard nproc 100" >> /etc/security/limits.conf
+
 # 更新包列表並安裝必要的軟體，包括 OpenSSH 服務
 RUN apt-get update && apt-get install -y \
     sudo \
