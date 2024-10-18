@@ -19,11 +19,11 @@
 3. Run Docker
     * If your computer is x86_64:
         ```sh
-        docker run -d -p 2222:22 my-ssh-enabled-ubuntu
+        docker run --cpus="1.5" --memory="512m" --pids-limit=100 -d -p 2222:22 my-ssh-enabled-ubuntu
         ```
     * If your computer is Apple Silicon
         ```sh
-        docker run --platform linux/amd64 -d -p 2222:22 --name my-x86-app-container my-x86-app
+        docker run --cpus="1.5" --memory="512m" --pids-limit=100 --platform linux/amd64 -d -p 2222:22 --name my-x86-app-container my-x86-app
         ```
 
 4. Connect the target machine
