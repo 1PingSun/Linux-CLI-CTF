@@ -1,5 +1,7 @@
 # Linux-CLI-CTF
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Linux Target Machine
 1. Clone the repo
     ```sh
