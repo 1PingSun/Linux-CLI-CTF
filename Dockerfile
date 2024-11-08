@@ -19,6 +19,9 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget \
     openssh-server \
+    nano \
+    file \
+    binutils \
     && rm -rf /var/lib/apt/lists/*
 
 # 創建 SSH 目錄
