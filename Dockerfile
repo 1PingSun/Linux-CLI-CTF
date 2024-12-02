@@ -1,4 +1,3 @@
-# 使用 Ubuntu 作為基礎映像
 # For x86_64
 # FROM ubuntu:22.04
 
